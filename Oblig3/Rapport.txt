@@ -1,0 +1,12 @@
+Kompiler programmet :
+----------------------
+Javac * .java 
+
+Kjør programmet ved å skrive :
+------------------------------
+Java TestSort <Algoritme> <antall elementer>
+
+Eks:
+----
+Java Test selectionSort 1000 
+
