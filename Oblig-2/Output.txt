@@ -1,0 +1,1015 @@
+--- Output from program ---
+
+
+
+$ java Oblig2 buildhouse1.txt :
+ 
+Current time: 0
+Starting: 5
+Current Manpower: 2
+
+Current time: 4
+Starting: 1
+Finished: 5
+Starting: 6
+Current Manpower: 4
+
+Current time: 6
+Finished: 6
+Current Manpower: 2
+github
+Current time: 8
+Finished: 1
+Starting: 2
+Current Manpower: 4
+
+Current time: 14
+Finished: 2
+Starting: 3
+Starting: 4
+Starting: 7
+Current Manpower: 7
+
+Current time: 15
+Finished: 3
+Finished: 4
+Current Manpower: 2
+
+Current time: 18
+Finished: 7
+Starting: 8
+Current Manpower: 4
+
+Current time: 22
+Finished: 8
+Current Manpower: 0
+
+--- Shortest possible time: 22 ---
+
+----- PROJECT INFO -----
+
+Task id: 1
+Task name: Build-walls
+Required time: 4
+Required manpower: 2
+Earliest start time: 4
+Latest start time: 4
+Slack: 0
+Critical: true
+Depening on this task : 2 3
+
+Task id: 2
+Task name: Build-roofs
+Required time: 6
+Required manpower: 4
+Earliest start time: 8
+Latest start time: 8
+Slack: 0
+Critical: true
+Depening on this task : 3 4 7
+
+Task id: 3
+Task name: Put-on-wallpapers
+Required time: 1
+Required manpower: 2
+Earliest start time: 14
+Latest start time: 17
+Slack: 3
+Critical: false
+Depening on this task : 8
+
+Task id: 4
+Task name: Put-on-tiles
+Required time: 1
+Required manpower: 3
+Earliest start time: 14
+Latest start time: 21
+Slack: 7
+Critical: false
+Depening on this task :
+
+Task id: 5
+Task name: Build-foundation
+Required time: 4
+Required manpower: 2
+Earliest start time: 0
+Latest start time: 0
+Slack: 0
+Critical: true
+Depening on this task : 1 6
+
+Task id: 6
+Task name: Make-floor
+Required time: 2
+Required manpower: 2
+Earliest start time: 4
+Latest start time: 12
+Slack: 8
+Critical: false
+Depening on this task : 7
+
+Task id: 7
+Task name: Put-carpet-floor
+Required time: 4
+Required manpower: 2
+Earliest start time: 14
+Latest start time: 14
+Slack: 0
+Critical: true
+Depening on this task : 8
+
+Task id: 8
+Task name: Move-in
+Required time: 4
+Required manpower: 4
+Earliest start time: 18
+Latest start time: 18
+Slack: 0
+Critical: true
+Depening on this task :
+
+
+
+$ java Oblig2 buildhouse2.txt 
+
+----- PROJECT INFO -----
+This project contains a cycle and is therefor not realizable.
+Tasks in cycle: 12761
+
+Task id: 1
+Task name: Build-walls
+Required time: 4
+Required manpower: 2
+Depening on this task : 2 3
+
+Task id: 2
+Task name: Build-roofs
+Required time: 6
+Required manpower: 4
+Depening on this task : 3 4 7
+
+Task id: 3
+Task name: Put-on-wallpapers
+Required time: 1
+Required manpower: 2
+Depening on this task : 8
+
+Task id: 4
+Task name: Put-on-tiles
+Required time: 1
+Required manpower: 3
+Depening on this task :
+
+Task id: 5
+Task name: Build-foundation
+Required time: 4
+Required manpower: 2
+Depening on this task : 1
+
+Task id: 6
+Task name: Make-floor
+Required time: 2
+Required manpower: 2
+Depening on this task : 1
+
+Task id: 7
+Task name: Put-carpet-floor
+Required time: 4
+Required manpower: 2
+Depening on this task : 6 8
+
+Task id: 8
+Task name: Move-in
+Required time: 4
+Required manpower: 4
+Depening on this task : 
+
+
+
+$ java Oblig2 examplefigure.txt
+
+Current time: 0
+Starting: 1
+Starting: 2
+Current Manpower: 6
+
+Current time: 3
+Finished: 1
+Current Manpower: 2
+
+Current time: 5
+Finished: 2
+Starting: 3
+Starting: 4
+Current Manpower: 6
+
+Current time: 6
+Finished: 3
+Starting: 5
+Current Manpower: 7
+
+Current time: 7
+Finished: 4
+Starting: 6
+Current Manpower: 7
+
+Current time: 10
+Finished: 5
+Current Manpower: 4
+
+Current time: 15
+Finished: 6
+Starting: 7
+Starting: 8
+Current Manpower: 5
+
+Current time: 16
+Finished: 8
+Current Manpower: 2
+
+Current time: 18
+Finished: 7
+Current Manpower: 0
+
+--- Shortest possible time: 18 ---
+
+----- PROJECT INFO -----
+
+Task id: 1
+Task name: 1
+Required time: 3
+Required manpower: 4
+Earliest start time: 0
+Latest start time: 3
+Slack: 3
+Critical: false
+Depening on this task : 3
+
+Task id: 2
+Task name: 2
+Required time: 5
+Required manpower: 2
+Earliest start time: 0
+Latest start time: 0
+Slack: 0
+Critical: true
+Depening on this task : 3 4
+
+Task id: 3
+Task name: 3
+Required time: 1
+Required manpower: 2
+Earliest start time: 5
+Latest start time: 6
+Slack: 1
+Critical: false
+Depening on this task : 5 6
+
+Task id: 4
+Task name: 4
+Required time: 2
+Required manpower: 4
+Earliest start time: 5
+Latest start time: 5
+Slack: 0
+Critical: true
+Depening on this task : 6
+
+Task id: 5
+Task name: 5
+Required time: 4
+Required manpower: 3
+Earliest start time: 6
+Latest start time: 11
+Slack: 5
+Critical: false
+Depening on this task : 7
+
+Task id: 6
+Task name: 6
+Required time: 8
+Required manpower: 4
+Earliest start time: 7
+Latest start time: 7
+Slack: 0
+Critical: true
+Depening on this task : 7 8
+
+Task id: 7
+Task name: 7
+Required time: 3
+Required manpower: 2
+Earliest start time: 15
+Latest start time: 15
+Slack: 0
+Critical: true
+Depening on this task :
+
+Task id: 8
+Task name: 8
+Required time: 1
+Required manpower: 3
+Earliest start time: 15
+Latest start time: 17
+Slack: 2
+Critical: false
+Depening on this task :
+
+
+
+Oblig-2 $ java Oblig2 buildgarage.txt      
+                                                                          
+Current time: 0
+Starting: 1
+Current Manpower: 1
+
+Current time: 14280
+Finished: 1
+Starting: 2
+Starting: 3
+Current Manpower: 4
+
+Current time: 14284
+Finished: 2
+Current Manpower: 3
+
+Current time: 230182
+Finished: 3
+Starting: 4
+Current Manpower: 2
+
+Current time: 262316
+Finished: 4
+Starting: 5
+Starting: 6
+Starting: 7
+Current Manpower: 6
+
+Current time: 262331
+Finished: 7
+Current Manpower: 5
+
+Current time: 262458
+Finished: 6
+Current Manpower: 4
+
+Current time: 303548
+Finished: 5
+Starting: 9
+Starting: 11
+Current Manpower: 6
+
+Current time: 307873
+Finished: 11
+Starting: 12
+Current Manpower: 8
+
+Current time: 309675
+Finished: 9
+Starting: 10
+Current Manpower: 7
+
+Current time: 363997
+Starting: 8
+Finished: 10
+Current Manpower: 6
+
+Current time: 405242
+Finished: 8
+Current Manpower: 4
+
+Current time: 429351
+Finished: 12
+Starting: 13
+Current Manpower: 3
+
+Current time: 430593
+Finished: 13
+Starting: 14
+Current Manpower: 2
+
+Current time: 484913
+Finished: 14
+Current Manpower: 0
+
+--- Shortest possible time: 484913 ---
+
+----- PROJECT INFO -----
+
+Task id: 1
+Task name: get-paperwork
+Required time: 14280
+Required manpower: 1
+Earliest start time: 0
+Latest start time: 0
+Slack: 0
+Critical: true
+Depening on this task : 2 3
+
+Task id: 2
+Task name: call-contractor
+Required time: 4
+Required manpower: 1
+Earliest start time: 14280
+Latest start time: 230178
+Slack: 215898
+Critical: false
+Depening on this task : 4
+
+Task id: 3
+Task name: clean-yard
+Required time: 215902
+Required manpower: 3
+Earliest start time: 14280
+Latest start time: 14280
+Slack: 0
+Critical: true
+Depening on this task : 4
+
+Task id: 4
+Task name: build-foundation
+Required time: 32134
+Required manpower: 2
+Earliest start time: 230182
+Latest start time: 230182
+Slack: 0
+Critical: true
+Depening on this task : 5 6 7
+
+Task id: 5
+Task name: build-wall-support
+Required time: 41232
+Required manpower: 4
+Earliest start time: 262316
+Latest start time: 262316
+Slack: 0
+Critical: true
+Depening on this task : 8 9 11
+
+Task id: 6
+Task name: lay-electrical-cables
+Required time: 142
+Required manpower: 1
+Earliest start time: 262316
+Latest start time: 484771
+Slack: 222455
+Critical: false
+Depening on this task :
+
+Task id: 7
+Task name: call-electrician
+Required time: 15
+Required manpower: 1
+Earliest start time: 262316
+Latest start time: 443653
+Slack: 181337
+Critical: false
+Depening on this task : 8
+
+Task id: 8
+Task name: install-electrical-gate-opener
+Required time: 41245
+Required manpower: 2
+Earliest start time: 363997
+Latest start time: 443668
+Slack: 79671
+Critical: false
+Depening on this task :
+
+Task id: 9
+Task name: build-walls
+Required time: 6127
+Required manpower: 4
+Earliest start time: 303548
+Latest start time: 383219
+Slack: 79671
+Critical: false
+Depening on this task : 10 13
+
+Task id: 10
+Task name: add-gate
+Required time: 54322
+Required manpower: 3
+Earliest start time: 309675
+Latest start time: 389346
+Slack: 79671
+Critical: false
+Depening on this task : 8
+
+Task id: 11
+Task name: build-stairs
+Required time: 4325
+Required manpower: 2
+Earliest start time: 303548
+Latest start time: 303548
+Slack: 0
+Critical: true
+Depening on this task : 12
+
+Task id: 12
+Task name: add-2nd-floor
+Required time: 121478
+Required manpower: 4
+Earliest start time: 307873
+Latest start time: 307873
+Slack: 0
+Critical: true
+Depening on this task : 13
+
+Task id: 13
+Task name: isolate-room
+Required time: 1242
+Required manpower: 3
+Earliest start time: 429351
+Latest start time: 429351
+Slack: 0
+Critical: true
+Depening on this task : 14
+
+Task id: 14
+Task name: furnish-appartment
+Required time: 54320
+Required manpower: 2
+Earliest start time: 430593
+Latest start time: 430593
+Slack: 0
+Critical: true
+Depening on this task :
+
+
+
+Oblig-2 $ java Oblig2 buildrail.txt
+                                                                              
+Current time: 0
+Starting: 9
+Current Manpower: 10
+
+Current time: 3
+Finished: 9
+Starting: 10
+Starting: 11
+Starting: 12
+Starting: 14
+Starting: 16
+Starting: 17
+Current Manpower: 56
+
+Current time: 4
+Finished: 11
+Starting: 18
+Starting: 19
+Starting: 20
+Current Manpower: 64
+
+Current time: 5
+Starting: 2
+Finished: 10
+Current Manpower: 70
+
+Current time: 12
+Finished: 2
+Current Manpower: 60
+
+Current time: 16
+Finished: 20
+Starting: 23
+Current Manpower: 61
+
+Current time: 28
+Finished: 14
+Starting: 15
+Current Manpower: 61
+
+Current time: 29
+Finished: 19
+Current Manpower: 57
+
+Current time: 33
+Finished: 12
+Starting: 13
+Current Manpower: 57
+
+Current time: 38
+Finished: 16
+Current Manpower: 45
+
+Current time: 44
+Finished: 18
+Starting: 21
+Current Manpower: 46
+
+Current time: 46
+Finished: 23
+Starting: 26
+Current Manpower: 48
+
+Current time: 48
+Finished: 15
+Finished: 17
+Starting: 22
+Current Manpower: 29
+
+Current time: 51
+Starting: 8
+Finished: 13
+Current Manpower: 24
+
+Current time: 59
+Finished: 21
+Starting: 24
+Current Manpower: 26
+
+Current time: 63
+Starting: 3
+Finished: 8
+Current Manpower: 29
+
+Current time: 64
+Finished: 3
+Finished: 22
+Starting: 25
+Current Manpower: 21
+
+Current time: 66
+Finished: 26
+Current Manpower: 14
+
+Current time: 119
+Starting: 4
+Finished: 24
+Current Manpower: 13
+
+Current time: 124
+Starting: 5
+Finished: 25
+Starting: 27
+Current Manpower: 22
+
+Current time: 134
+Finished: 4
+Current Manpower: 16
+
+Current time: 136
+Finished: 5
+Current Manpower: 10
+
+Current time: 149
+Finished: 27
+Starting: 28
+Starting: 29
+Current Manpower: 20
+
+Current time: 179
+Finished: 28
+Current Manpower: 10
+
+Current time: 186
+Starting: 1
+Starting: 6
+Starting: 7
+Finished: 29
+Starting: 30
+Current Manpower: 29
+
+Current time: 204
+Finished: 7
+Current Manpower: 23
+
+Current time: 206
+Finished: 1
+Finished: 30
+Starting: 31
+Current Manpower: 13
+
+Current time: 213
+Finished: 6
+Current Manpower: 7
+
+Current time: 218
+Finished: 31
+Current Manpower: 0
+
+--- Shortest possible time: 218 ---
+
+----- PROJECT INFO -----
+
+Task id: 1
+Task name: Install-pavement
+Required time: 20
+Required manpower: 10
+Earliest start time: 186
+Latest start time: 198
+Slack: 12
+Critical: false
+Depening on this task :
+
+Task id: 2
+Task name: Install-railing
+Required time: 7
+Required manpower: 10
+Earliest start time: 5
+Latest start time: 211
+Slack: 206
+Critical: false
+Depening on this task :
+
+Task id: 3
+Task name: Install-ticketmachine
+Required time: 1
+Required manpower: 10
+Earliest start time: 63
+Latest start time: 217
+Slack: 154
+Critical: false
+Depening on this task :
+
+Task id: 4
+Task name: Paint-tower-1-with-arch
+Required time: 15
+Required manpower: 6
+Earliest start time: 119
+Latest start time: 203
+Slack: 84
+Critical: false
+Depening on this task :
+
+Task id: 5
+Task name: Paint-tower-2
+Required time: 12
+Required manpower: 6
+Earliest start time: 124
+Latest start time: 206
+Slack: 82
+Critical: false
+Depening on this task :
+
+Task id: 6
+Task name: Paint-trusses
+Required time: 27
+Required manpower: 6
+Earliest start time: 186
+Latest start time: 191
+Slack: 5
+Critical: false
+Depening on this task :
+
+Task id: 7
+Task name: Paint-cables-and-rods
+Required time: 18
+Required manpower: 6
+Earliest start time: 186
+Latest start time: 200
+Slack: 14
+Critical: false
+Depening on this task :
+
+Task id: 8
+Task name: Put-lane-tunnel-and-intersection
+Required time: 12
+Required manpower: 7
+Earliest start time: 51
+Latest start time: 194
+Slack: 143
+Critical: false
+Depening on this task : 3 31
+
+Task id: 9
+Task name: Setup-barrack
+Required time: 3
+Required manpower: 10
+Earliest start time: 0
+Latest start time: 0
+Slack: 0
+Critical: true
+Depening on this task : 10 11 12 14 16 17
+
+Task id: 10
+Task name: Prepare-storage
+Required time: 2
+Required manpower: 4
+Earliest start time: 3
+Latest start time: 209
+Slack: 206
+Critical: false
+Depening on this task : 2
+
+Task id: 11
+Task name: Rig-ramspace-reinforcing
+Required time: 1
+Required manpower: 4
+Earliest start time: 3
+Latest start time: 8
+Slack: 5
+Critical: false
+Depening on this task : 18 19 20
+
+Task id: 12
+Task name: Build-tunnel
+Required time: 30
+Required manpower: 12
+Earliest start time: 3
+Latest start time: 146
+Slack: 143
+Critical: false
+Depening on this task : 13
+
+Task id: 13
+Task name: Clean-tunnel
+Required time: 18
+Required manpower: 12
+Earliest start time: 33
+Latest start time: 176
+Slack: 143
+Critical: false
+Depening on this task : 8
+
+Task id: 14
+Task name: Build-intersection
+Required time: 25
+Required manpower: 12
+Earliest start time: 3
+Latest start time: 149
+Slack: 146
+Critical: false
+Depening on this task : 15
+
+Task id: 15
+Task name: Clean-intersection
+Required time: 20
+Required manpower: 12
+Earliest start time: 28
+Latest start time: 174
+Slack: 146
+Critical: false
+Depening on this task : 8
+
+Task id: 16
+Task name: Build-towerfoundation-1
+Required time: 35
+Required manpower: 12
+Earliest start time: 3
+Latest start time: 14
+Slack: 11
+Critical: false
+Depening on this task : 21
+
+Task id: 17
+Task name: Build-towerfoundation-2
+Required time: 45
+Required manpower: 12
+Earliest start time: 3
+Latest start time: 3
+Slack: 0
+Critical: true
+Depening on this task : 22
+
+Task id: 18
+Task name: Make-armouring-tower-1
+Required time: 40
+Required manpower: 4
+Earliest start time: 4
+Latest start time: 9
+Slack: 5
+Critical: false
+Depening on this task : 21
+
+Task id: 19
+Task name: Make-armouring-tower-2
+Required time: 25
+Required manpower: 4
+Earliest start time: 4
+Latest start time: 23
+Slack: 19
+Critical: false
+Depening on this task : 22
+
+Task id: 20
+Task name: Make-armouring-arch
+Required time: 12
+Required manpower: 4
+Earliest start time: 4
+Latest start time: 144
+Slack: 140
+Critical: false
+Depening on this task : 23
+
+Task id: 21
+Task name: Encase-and-armour-tower-1
+Required time: 15
+Required manpower: 5
+Earliest start time: 44
+Latest start time: 49
+Slack: 5
+Critical: false
+Depening on this task : 24
+
+Task id: 22
+Task name: Encase-and-armour-tower-2
+Required time: 16
+Required manpower: 5
+Earliest start time: 48
+Latest start time: 48
+Slack: 0
+Critical: true
+Depening on this task : 25
+
+Task id: 23
+Task name: Encase-and-armour-arch
+Required time: 30
+Required manpower: 5
+Earliest start time: 16
+Latest start time: 156
+Slack: 140
+Critical: false
+Depening on this task : 26
+
+Task id: 24
+Task name: Cast-tower-1
+Required time: 60
+Required manpower: 7
+Earliest start time: 59
+Latest start time: 64
+Slack: 5
+Critical: false
+Depening on this task : 4 27
+
+Task id: 25
+Task name: Cast-tower-2
+Required time: 60
+Required manpower: 7
+Earliest start time: 64
+Latest start time: 64
+Slack: 0
+Critical: true
+Depening on this task : 5 27
+
+Task id: 26
+Task name: Cast-arch
+Required time: 20
+Required manpower: 7
+Earliest start time: 46
+Latest start time: 186
+Slack: 140
+Critical: false
+Depening on this task : 31
+
+Task id: 27
+Task name: Stretch-two-maincables
+Required time: 25
+Required manpower: 10
+Earliest start time: 124
+Latest start time: 124
+Slack: 0
+Critical: true
+Depening on this task : 28 29
+
+Task id: 28
+Task name: Build-truss-1-with-rods
+Required time: 30
+Required manpower: 10
+Earliest start time: 149
+Latest start time: 156
+Slack: 7
+Critical: false
+Depening on this task : 1 6 7 30
+
+Task id: 29
+Task name: Build-truss-2-with-rods
+Required time: 37
+Required manpower: 10
+Earliest start time: 149
+Latest start time: 149
+Slack: 0
+Critical: true
+Depening on this task : 1 6 7 30
+
+Task id: 30
+Task name: Cast-lane-on-truss
+Required time: 20
+Required manpower: 7
+Earliest start time: 186
+Latest start time: 186
+Slack: 0
+Critical: true
+Depening on this task : 31
+
+Task id: 31
+Task name: Polish-lane-on-arch
+Required time: 12
+Required manpower: 7
+Earliest start time: 206
+Latest start time: 206
+Slack: 0
+Critical: true
+Depening on this task :
+
+
+
+
+
+
+
+
+
+
+

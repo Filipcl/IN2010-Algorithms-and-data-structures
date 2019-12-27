@@ -1,0 +1,31 @@
+RAPPORT : 
+
+TIDSKOMPLEKSITET: 
+. What is the time complexity of your solution? You must explain the stated complexity. If you have a different complexity for each problem, you need to discuss them
+separately.
+
+ - Løsningen inneholder flere metoder som påvirker tidskompleksiteten; 
+
+	- Metoden TopSort() er en topologisk sortering som utfører en form for BFS med mellomlagring av noder 
+	i en stack før de sorteres. Metodens tidskompleksitet er O(|V| + |E|) da søket itterere igjennom grafens noder 
+	og kanter kun en gang, før de legges inn i stacken.
+
+	- Metoden haCycle() og hasCycleRec() utgjør et DFS for å sjekke etter om grafen har en sykel som har tidskompleksitet på O(|V| + |E|), det er fordi den går 
+	igjennom alle nodene i grafen og dens kanter kun en gang helt til den har gått igjennom alle nodene eller funnet en sykel.
+	
+	- Metoden printOptimal() er en metode med tidskompleksitet O(n^2) da den inneholder en forløkke som itererer gjennom shortestime og en nøstet for-løkke som itererer igjennom 
+	antall Tasks i taskMap. 
+	
+	- Selv om søket etter sykel og sorteringen kjører i O(|V| + |E|) vil hele løsningne min ha en tidskompleksitet på O(n^2), siden man tar utgangspunkt i den 
+	værste kjøretiden.
+
+
+
+KRAV TIL GRAFEN: 
+ - I min løsning stilles det krav til at grafen som lese inn er en DAG graf (Direted acyclic graph), det er fordi grafen må ha kanter som sier 
+   noe om avhengigheten mellom noden. Dette er et krav fordi jeg løsningen bruker nodenes avhengighet for topologisk sortere nodene i en prioritrings kø. 
+   Metoden hasCycle() sjekker om input grafen er asyklisk.
+
+GRAFALGORITMER:
+ - I min løsning bruker jeg graf algortimene: Topologisk sortering og DFS. Topsort brukes til å legge task 
+   i prioritert linjær rekke følge, DFS brukes for å se sjekke om grafen har sykler. 
