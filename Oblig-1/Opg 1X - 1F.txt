@@ -1,0 +1,6 @@
+Oppgave 1X : Grafen består av en sammenhengende urettet komponent. 
+Node 5 har ingen inn eller utgrad og er derfor ikke en sammenhengende komponent.
+
+Oppgave 1F : En stjerne med |V| noder har en utgrad på antall noder -1, da det 
+er en node i midten som utgjør stjernen (Stjernens rot), man kan da si at stjernen med |V| noder har 
+antall kanter: |E| = |V|-1.
